@@ -1,0 +1,39 @@
+.Calendar__container {
+  width: clamp(var(--size-15), calc(100vw - 2 * var(--size-12)), 1200px);
+  height: clamp(var(--size-15), calc(100vh - 2 * var(--size-12)), 800px);
+  display: grid;
+  grid-template: 1fr auto / auto 1fr auto;
+  gap: var(--size-1);
+}
+
+.Calendar__days {
+  grid-column: span 3;
+  border: 1px solid var(--teal-6);
+  border-radius: var(--size-2);
+  display: flex;
+  overflow: hidden;
+}
+
+.Calendar__day {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+}
+
+.Calendar__day:not(:last-child) {
+  border-right: 1px solid var(--teal-6);
+}
+
+.Calendar__day > div:first-child {
+  background-color: var(--teal-6);
+  color: white;
+  font-weight: var(--font-weight-6);
+}
+
+.Calendar__day:not(:last-child) > div:first-child {
+  border-right: 1px solid var(--teal-8);
+}
+
+.Calendar__next_week_button {
+  grid-column: 3;
+}
