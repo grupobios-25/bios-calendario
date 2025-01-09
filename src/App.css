@@ -7,7 +7,7 @@
 }
 
 .App__container {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.7);
   padding: var(--size-3);
   border-radius: var(--size-3);
   box-shadow: var(--shadow-4);
